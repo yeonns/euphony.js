@@ -1,8 +1,8 @@
 {
-  "name": "euphony.js",
-  "version": "v0.2.3",
+  "name": "@euphony-io/euphony.js",
+  "version": "v0.2.5",
   "description": "Sound Communication Library",
-  "main": "./euphony.js",
+  "main": "./src/euphony.js",
   "keywords": [
     "sound",
     "Inaudible frequency",
@@ -10,20 +10,27 @@
   ],
   "author": "jbear",
   "license": "Apache-2.0",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+      "type":"git",
+      "url": "https://github.com/euphony-io/euphony.js"
+  },
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "build-dev": "webpack --config webpack.config.devel.js",
     "dev": "webpack-dev-server",
-    "es6": "terser --compress --mangle -- euphony.js > ./dist/euphony.m.min.js"
+    "es6": "terser --compress --mangle -- ./src/euphony.js > ./dist/euphony.m.min.js"
   },
   "dependencies": {
     "@babel/core": "^7.6.0",
     "@babel/preset-env": "^7.6.0",
     "babel-loader": "^8.0.6",
-    "npm": "^6.13.2",
-    "regenerator-runtime": "^0.13.3",
     "chai": "^4.2.0",
     "core-js": "^3.2.1",
+    "npm": "^6.13.2",
+    "regenerator-runtime": "^0.13.3",
     "terser": "^4.3.1",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.8"
@@ -37,6 +44,7 @@
     "core-js": "^3.2.1",
     "terser": "^4.3.1",
     "webpack": "^4.40.2",
-    "webpack-cli": "^3.3.8"
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.11.2"
   }
 }

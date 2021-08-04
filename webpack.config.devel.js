@@ -13,7 +13,7 @@ const path = require('path');
 module.exports = {
     entry:
     {
-        'euphony.dev' : ['./euphony.js'],
+        'euphony.dev' : ['./src/euphony.js'],
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
