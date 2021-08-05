@@ -1,5 +1,5 @@
 {
-  "name": "@yeonns/euphony.js",
+  "name": "@euphony-io/euphony.js",
   "version": "v0.2.5",
   "description": "Sound Communication Library",
   "main": "./src/euphony.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
       "type":"git",
-      "url": "https://github.com/yeonns/euphony.js"
+      "url": "https://github.com/euphony-io/euphony.js"
   },
   "scripts": {
     "build": "webpack --config webpack.config.js",
