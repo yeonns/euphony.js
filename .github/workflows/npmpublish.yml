@@ -7,6 +7,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions: 
+      contents: read
+      packages: write 
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
@@ -14,6 +17,7 @@ jobs:
           node-version: 12
       - run: npm ci
       - run: npm test
+      - run: npm run build
 
   publish-gpr:
     needs: build
@@ -25,10 +29,6 @@ jobs:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
           scope: '@euphony-io'
-      - run: npm ci
-      - run: npm run build
-      - run: echo "//npm.pkg.github.com:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
-      - run: cat $NPM_CONFIG_USERCONFIG
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
