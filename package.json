@@ -14,7 +14,7 @@
     "build": "webpack --config webpack.config.js",
     "build-dev": "webpack --config webpack.config.devel.js",
     "dev": "webpack-dev-server",
-    "es6": "terser --compress --mangle -- euphony.js > ./dist/euphony.m.min.js"
+    "es6": "terser --compress --mangle -- ./src/euphony.js > ./dist/euphony.m.min.js"
   },
   "dependencies": {
     "@babel/core": "^7.6.0",
