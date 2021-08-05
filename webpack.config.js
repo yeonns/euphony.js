@@ -16,7 +16,7 @@ const path = require('path');
 
 module.exports = {
     entry: //[//"core-js",
-    {'euphony.min' : ['core-js/stable', './euphony.js']},
+    {'euphony.min' : ['core-js/stable', './src/euphony.js']},
 //],
     output: {
         path: path.resolve(__dirname, 'dist'),

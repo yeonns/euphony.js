@@ -1,8 +1,8 @@
 {
-  "name": "euphony.js",
-  "version": "v0.2.3",
+  "name": "@euphony-io/euphony.js",
+  "version": "v0.2.4",
   "description": "Sound Communication Library",
-  "main": "./euphony.js",
+  "main": "./src/euphony.js",
   "keywords": [
     "sound",
     "Inaudible frequency",
