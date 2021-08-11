@@ -44,8 +44,8 @@ You can also use the installer from the [Node.js website](https://nodejs.org).
 
 ### Installing node modules
 ```
-cd euphony.js
-npm install
+$ cd euphony.js
+$ npm install
 ```
 
 ### Development Tip
@@ -53,7 +53,7 @@ When doing development, you can use this command to run local server.
 Check demo: http://localhost:8080/demo  
 Check test: http://localhost:8080/test
 ```
-npm run dev
+$ npm run dev
 ```
 
 ## Contributing
