@@ -298,6 +298,7 @@ export var Euphony = (function () {
 
                 T.source.buffer = T.EuphonyArrayBuffer;
                 T.source.loop = isLoop;
+                // TODO: module path change
                 T.context.audioWorklet.addModule('https://cdn.jsdelivr.net/gh/designe/euphony.js/euphony-processor.js').then(() => {
                     const euphonyWorkletNode = new EuphonyNode(T.context);
                     T.source.connect(euphonyWorkletNode).connect(T.gainNode).connect(T.context.destination);

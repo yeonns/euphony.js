@@ -1,6 +1,6 @@
 {
   "name": "@euphony-io/euphony.js",
-  "version": "v0.2.4",
+  "version": "v0.2.5",
   "description": "Sound Communication Library",
   "main": "./src/euphony.js",
   "keywords": [
@@ -10,6 +10,13 @@
   ],
   "author": "jbear",
   "license": "Apache-2.0",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+      "type":"git",
+      "url": "https://github.com/euphony-io/euphony.js"
+  },
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "build-dev": "webpack --config webpack.config.devel.js",
